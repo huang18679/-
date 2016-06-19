@@ -1,0 +1,40 @@
+//
+//  百思不得姐.pch
+//  百思不得姐
+//
+//  Created by zhou on 16/1/18.
+//  Copyright © 2016年 zhou. All rights reserved.
+//
+
+
+
+
+#import "UIImage+ZYCimage.h"
+#import "UIView+ZYCFrame.h"
+#import "UIBarButtonItem+ZYCItem.h"
+#import "UIImage+Antialias.h"
+#import "ZYCConst.h"
+#import "NSDate+ZYCInterval.h"
+#import "NSCalendar+ZYCCalendar.h"
+#import "UIImage+ZYCTailor.h"
+#import "UIImageView+ZYCHeader.h"
+#import "UIView+ZYCInit.h"
+#import "UIImageView+ZYCimage.h"
+#import "ZYCExtensionConfig.h"
+
+#define ZYCScreenW [UIScreen mainScreen].bounds.size.width
+#define ZYCScreenH [UIScreen mainScreen].bounds.size.height
+
+#define iPhone5 (ZYCScreenH == 568)
+#define iPhone6 (ZYCScreenH == 667)
+#define iPhone6p (ZYCScreenH == 736)
+#define iPhone4 (ZYCScreenH == 480)
+
+#define ZYCWeakSelf __weak typeof(self) weakSelf = self;
+
+
+#define ZYCCommentSectionHeaderFont [UIFont systemFontOfSize:15]
+
+#define ZYCColor(r,g,b) [UIColor colorWithRed:arc4random_uniform(r) / 255.0 green:arc4random_uniform(g) / 255.0 blue:arc4random_uniform(b) / 255.0 alpha:1]
+
+#define ZYCRandomColor ZYCColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
